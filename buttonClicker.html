@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Button Clicker</title>
+        <link rel="stylesheet" href="./buttonClicker.css">
+    </head>
+    <body>
+        <div id="nav-bar">
+            <h1>Dojonary</h1>
+            <input type="text" placeholder="Search">
+            <!---: login and logout button -->
+            <button onclick="uploadDef(this)">Login</button>
+        </div>
+        <div id="main">
+            <div id="col-left">
+                <div class="box">
+                    <div class="word">
+                        <h2>ninja</h2>
+                        <p class="p1">noun</p>
+                        <p class="p2">plural: <em>ninjas</em></p>
+                        <!---: Like button -->
+                        <button onclick="alert('Ninja was liked')">13 likes</button>
+                    </div>
+                    <div class="definition">
+                        A practitioner skilled in <a href="future-link.com">Japanese</a> art of <a href="future-link.com">ninjutsu</a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="word">
+                        <h2>ninja</h2>
+                        <p class="p1">noun</p>
+                        <p class="p2">plural: <em>ninjas</em></p>
+                        <button onclick="alert('Ninja was liked')">37 likes</button>
+                    </div>
+                    <div class="definition">
+                        A <a href="future-link.com">programmer</a> who breaks down problems with <a href="future-link.com">zen</a>-like focus
+                    </div>
+                </div>
+            </div>
+            <div id="col-right"> 
+                <div id="add-definition">
+                    <p>Dojonary is defined by <strong>YOU</strong></p>
+                    <!---: remove add definition button -->
+                    <button onclick="removeElement(this)">Add Definition</button>
+                </div>
+            </div>
+        </div>
+        <script src="./buttonClicker.js"></script>
+    </body>
+</html>
